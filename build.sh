@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-tag=$(git describe --tags --abbrev=0)
+tag=$(git describe --tags)
 repo=docker.io/emsixteeen
 image=k8s-audit-webhook
 image_tag="${repo}/${image}:${tag}"
